@@ -1,0 +1,41 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: workflow-demo
+
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  
+  datasource:
+    platform: mysql
+    schema: classpath:schema.v2.sql
+    data: classpath:data.sql
+    url: jdbc:mysql://192.168.99.100:3306/workflow_demo?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    
+    thymeleaf:
+      encoding: UTF-8
+      cache: false # template caching
+      check-template: true # Check that the template exists before rendering it
+      check-template-location: true # Check that the templates location exists
+      enabled: true # Enable Thymeleaf view resolution for Web frameworks
+      mode: HTML5 # Template mode to be applied to templates. See also StandardTemplateModeHandlers
+      prefix: classpath:/templates/ # Prefix that gets prepended to view names when building a URL
+      suffix: .html # Suffix that gets appended to view names when building a URL.
+      content-type: text/html
+      
+      
+logging:
+  level:
+    root: INFO
+    org.hibernate: ERROR
+    org.hibernate.type.descriptior.sql.BasicBinder: TRACE
+    org.hibernate.type.descriptior.sql.BasicExtractor: TRACE
+    org.springframework.web: DEBUG

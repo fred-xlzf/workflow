@@ -1,0 +1,57 @@
+.box {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 60px;
+}
+
+.container {
+  width: 1240px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  background: orange;
+}
+
+.header dt {
+  float: left;
+  padding-left: 100px;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.content_body {
+  position: relative;
+  width: 100%;
+  height: 480px;
+  background: olive;
+}
+
+.content_footer {
+  position: relative;
+  height: 60px;
+  background: orangered;
+  width: 100%
+}
+
+.left {
+  height: 100%;
+  width: 200px;
+  float: left;
+  background: orchid;
+}
+
+.right {
+  height: 100%;
+  width: 100px;
+  float: right;
+  background: yellowgreen;
+}
