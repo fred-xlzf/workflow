@@ -1,2 +1,15 @@
+spring:
+  application:
+    name: workflow-demo
+  
+  sleuth:
+    log:
+      json:
+        enabled: true
+    
 server:
   port: 10000
+
+logging:
+  level:
+    org.springframework.web.servlet.DispatcherServlet: INFO

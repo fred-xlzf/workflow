@@ -1,3 +1,8 @@
-spring:
-  application:
-    name: workflow-demo
+#spring:
+#  application:
+#    name: workflow-demo
+  
+#  sleuth:
+#    log:
+#      json:
+#        enabled: true
