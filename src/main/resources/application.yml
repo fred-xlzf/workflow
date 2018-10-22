@@ -3,6 +3,8 @@ spring:
     name: workflow-demo
   
   sleuth:
+    workflow-demo:
+      probability: 1.0
     log:
       json:
         enabled: true

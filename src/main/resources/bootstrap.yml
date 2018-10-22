@@ -1,8 +1,10 @@
-#spring:
-#  application:
-#    name: workflow-demo
-  
-#  sleuth:
-#    log:
-#      json:
-#        enabled: true
+spring:
+  application:
+    name: workflow-demo
+
+  sleuth:
+    workflow-demo:
+      probability: 1.0
+    log:
+      json:
+        enabled: true
